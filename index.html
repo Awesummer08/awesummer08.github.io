@@ -21,10 +21,7 @@
             rel="stylesheet" 
         />
         <!-- Font Awesome-->
-        <script
-            src="https://kit.fontawesome.com/c2501ed7a3.js" 
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://kit.fontawesome.com/c2501ed7a3.js" crossorigin="anonymous"></script>
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css" />
         <!-- Javascript -->
@@ -33,18 +30,18 @@
     </head>
     <body>
         <!-- header -->
-        <header>
-            <div>
-                <img src="images/favicon.ico" alt="logo" />
-                <h1><a href="#">Summer's Portfolio</a></h1>
+        <header class="header">
+            <div class="header__logo">
+                <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+                <h1 class="header__logo__title"><a href="#">Summer's Portfolio</a></h1>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">My Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="header__menu">
+                    <li><a class="header__menu__item active" href="#home">Home</a></li>
+                    <li><a class="header__menu__item" href="#about">About</a></li>
+                    <li><a class="header__menu__item" href="#skills">Skills</></li>
+                    <li><a class="header__menu__item" href="#work">My Work</></li>
+                    <li><a class="header__menu__item" href="#contact">Contact</></li>
                 </ul>
             </nav>
         </header>
@@ -53,21 +50,151 @@
             <!-- Home -->
             <section id="home">
                 <img src="images/profile.png" alt="Summer's profile" />
-                <h2>Hello I&#39;m, Summer</h2>
-                <p>want to be a backend programmer</p>
+                <h2>Hello I&#39;m, AweSummer</h2>
+                <p>I&#39;m Backend Developer</p>
+                <p>안녕하세요. 성장하는 개발자 곽나경입니다.
+                    다양한 활동으로 쌓은 경험으로 협동과 협력에 강하며, 
+                    기본기를 탄탄하고, 빠르게 성장하기 위해서 꾸준히 노력하는 것을 좋아합니다.
+                    함께 사용자의 입장에서 실용성있는 서비스를 만드는 것이 저의 목표입니다.
+                </p>
                 <a href="#contact">Contact me</a>
             </section>
             <!-- about -->
-            <section id="about"></section>
+            <section id="about">
+                <h2>About me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi commodi accusantium vel maxime in. Neque dolorum cupiditate voluptatem vero sit harum cumque porro dignissimos maxime suscipit adipisci, vel quasi sapiente.
+                </p>
+                <ul>
+                    <li>
+                        <p>Certification</p>
+                        <img src="images/hrdk.png" alt="한국산업인력공단">
+                        <p>정보처리기사</p>
+                        <p>취득일 : 2023.06</p>
+                        <p>주관사 : 한국인력공단</p>
+                    </li>
+                    <li>
+                        <p>Education</p>
+                        <img src="images/koreaIT.png" alt="코리아IT아카데미">
+                        <p>코리아IT아카데미</p>
+                        <p>기간 : 2021.10~2022.10</p>
+                        <p>교육사항 : Java, HTML, CSS, JavaScript</p>
+                    </li>
+                    <li>
+                        <p>Education</p>
+                        <img src="images/inflearn.png" alt="인프런">
+                        <p>인프런</p>
+                        <p>기간 : 2022.11~2023.07</p>
+                        <p>교육사항: MVC패턴, JSP, DB활용 </p>
+                    </li>
+                </ul>
+            </section>
             <!-- skills -->
-            <section id="skills"></section>
+            <section id="skills">
+                <h2>My Skills</h2>
+                <p>Skill & Attributes</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas distinctio eveniet atque quasi aperiam eligendi tempora vero, odit et laudantium unde similique, minus ab, vitae accusamus a quam alias!</p>
+                <div>
+                    <section>
+                        <h3>Coding Skills</h3>
+                        <ul>
+                            <li><i class="fa-brands fa-java"></i></i>Java</li>
+                            <li><i class="fa-brands fa-html5"></i>HTML</li>
+                            <li><i class="fa-brands fa-css3-alt"></i>css</li>
+                            <li><i class="fa-brands fa-square-js"></i>JavaScript</li>
+                            <li><i class="fa-brands fa-servicestack"></i>MyBatis</li>
+                            <li><i class="fa-brands fa-servicestack"></i>JPA</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Visual Stuido Code</li>
+                            <li>IntelliJ</li>
+                            <li>Spring Tool Suite 4</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Etc</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>MyriaDB</li>
+                            <li>SourceTree</li>
+                            <li>Postman</li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
             <!-- work -->
-            <section id="work"></section>
+            <section id="work">
+                <h2>My work</h2>
+                <p>Projects</p>
+                <ul>
+                    <li><a href="#" target="_blank">
+                        <img src="images/photogram1.png" alt="photogram1">
+                        <div>
+                            <h3>Photogram Project</h3>
+                            <p>Clone Coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="images/photogram2.png" alt="photogram2">
+                        <div>
+                            <h3>Project #1</h3>
+                            <p>Clone Coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="images/myblog1.png" alt="myblog1">
+                        <div>
+                            <h3>Project #1</h3>
+                            <p>Clone Coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="images/myblog2.png" alt="myblog2">
+                        <div>
+                            <h3>Project #1</h3>
+                            <p>Clone Coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" target="_blank">
+                        <img src="images/watchapedia.png" alt="watcha">
+                        <div>
+                            <h3>Project #1</h3>
+                            <p>Clone Coding with HTML, CSS</p>
+                        </div>
+                    </a></li>
+                </ul> 
+            </section>
             <section id="contact"></section>
             <!-- Arrow up -->
-            <aside></aside>
+            <aside>
+                <a href="#home" title="back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </aside>
         </main>
         <!-- footer -->
-        <footer></footer>
+        <footer>
+            <h2>Contacts</h2>
+            <p>strongsummer0827@gmail.com</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/Awesummer08" target="_blank" title="my github link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://verano08.tistory.com/" target="_blank" title="my blog link">
+                        <i class="fa-solid fa-book"></i>
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <i class="fa-regular fa-copyright"></i>
+                <span>AweSummer - All rights reserved</span>
+            </div>
+        </footer>
     </body>
 </html>
