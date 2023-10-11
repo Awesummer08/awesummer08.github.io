@@ -171,3 +171,55 @@
         color: var(--color-text);
         outline: 2px solid var(--color-accent);
     }
+
+
+/* about */
+    .majors {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2.5rem 0;
+    }
+
+    .major {
+        padding: 2rem 1.2rem;
+        border: 7px solid var(--color-accent);
+        border-radius: 1rem;
+        margin: 0 0.7rem;
+        transition: all 300ms ease;
+        cursor: default;
+        box-shadow: -10px -10px 30px 4px rgba(0,0,0,0.1), 10px 10px 30px 4px rgba(45,78,255,0.15);
+    }
+
+    .major__title {
+        font-size: 1.5rem;
+        font-weight:bold
+    }
+
+    .major__imagebox {
+        display: inline-block;
+        height: 50px;
+        width: 130px;
+        border: 1px solid var(--color-blue);
+    }
+
+    .major__image--1 {
+        height: 100%;
+        width: 70%;
+    }
+
+    .major__image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .major__title__name {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+    }
+
+    .major:hover {
+        transform: scale(1.1);
+    }

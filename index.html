@@ -48,7 +48,7 @@
         <!-- main -->
         <main>
             <!-- Home -->
-            <section id="home">
+            <section id="home" class="section">
                 <img class="home__avatar" src="images/profile.png" alt="Summer's profile" />
                 <h2 class="home__title">Hello</br> I&#39;m, <strong class="home__title--strong">AweSummer</strong></h2>
                 <p class="home__description__en">I&#39;m Backend Developer</p>
@@ -60,32 +60,38 @@
                 <a class="home__contact" href="#contact">Contact me</a>
             </section>
             <!-- about -->
-            <section id="about" class="section">
+            <section id="about" class="section  max-container">
                 <h2 class="title">About me</h2>
                 <p class="description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi commodi accusantium vel maxime in. Neque dolorum cupiditate voluptatem vero sit harum cumque porro dignissimos maxime suscipit adipisci, vel quasi sapiente.
                 </p>
-                <ul>
-                    <li>
-                        <p>Certification</p>
-                        <img src="images/hrdk.png" alt="한국산업인력공단">
-                        <p>정보처리기사</p>
+                <ul class="majors">
+                    <li class="major">
+                        <p class="major__title">Certification</p>
+                        <span class="major__imagebox">
+                            <img class="major__image--1" src="images/hrdk.png" alt="한국산업인력공단">
+                        </span>
+                        <p class="major__title__name">정보처리기사</p>
                         <p>취득일 : 2023.06</p>
                         <p>주관사 : 한국인력공단</p>
                     </li>
-                    <li>
-                        <p>Education</p>
-                        <img src="images/koreaIT.png" alt="코리아IT아카데미">
-                        <p>코리아IT아카데미</p>
+                    <li class="major">
+                        <p class="major__title">Education</p>
+                        <span class="major__imagebox">
+                            <img class="major__image" src="images/koreaIT.png" alt="코리아IT아카데미">
+                        </span>
+                        <p class="major__title__name">코리아IT아카데미</p>
                         <p>기간 : 2021.10~2022.10</p>
-                        <p>교육사항 : Java, HTML, CSS, JavaScript</p>
+                        <p>교육사항 : Java, HTML, </br>CSS, JavaScript</p>
                     </li>
-                    <li>
-                        <p>Education</p>
-                        <img src="images/inflearn.png" alt="인프런">
-                        <p>인프런</p>
+                    <li class="major">
+                        <p class="major__title">Education</p>
+                        <span class="major__imagebox">
+                            <img class="major__image" src="images/inflearn.png" alt="인프런">
+                        </span>
+                        <p class="major__title__name">인프런</p>
                         <p>기간 : 2022.11~2023.07</p>
-                        <p>교육사항: MVC패턴, JSP, DB활용 </p>
+                        <p>교육사항: MVC패턴, JSP, </br>DB활용 </p>
                     </li>
                 </ul>
             </section>
@@ -180,7 +186,7 @@
             </aside>
         </main>
         <!-- footer -->
-        <footer  id="work" class="section">
+        <footer id="work" class="section">
             <h2 class="title">Contacts</h2>
             <p class="description">strongsummer0827@gmail.com</p>
             <ul>
