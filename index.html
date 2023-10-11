@@ -35,7 +35,7 @@
                 <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
                 <h1 class="header__logo__title"><a href="#">Summer's Portfolio</a></h1>
             </div>
-            <nav>
+            <nav class="header__nav">
                 <ul class="header__menu">
                     <li><a class="header__menu__item active" href="#home">Home</a></li>
                     <li><a class="header__menu__item" href="#about">About</a></li>
@@ -49,10 +49,9 @@
         <main>
             <!-- Home -->
             <section id="home" class="section">
-                <img class="home__avatar" src="images/profile.png" alt="Summer's profile" />
+                <img class="home__avatar" src="images/profile_original.jpg" alt="Summer's profile" />
                 <h2 class="home__title">Hello</br> I&#39;m, <strong class="home__title--strong">AweSummer</strong></h2>
-                <p class="home__description__en">I&#39;m Backend Developer</p>
-                <p class="home__description">안녕하세요. 성장하는 개발자 곽나경입니다.</br>
+                <p class="home__description">안녕하세요. <strong class="home__title--strong">성장하는 개발자 곽나경</strong>입니다.</br>
                     다양한 활동으로 쌓은 경험으로 협동과 협력에 강하며,</br>
                     기본기를 탄탄하고, 빠르게 성장하기 위해서 꾸준히 노력하는 것을 좋아합니다.</br>
                     함께 사용자의 입장에서 실용성있는 서비스를 만드는 것이 저의 목표입니다.</br>
@@ -62,9 +61,7 @@
             <!-- about -->
             <section id="about" class="section  max-container">
                 <h2 class="title">About me</h2>
-                <p class="description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi commodi accusantium vel maxime in. Neque dolorum cupiditate voluptatem vero sit harum cumque porro dignissimos maxime suscipit adipisci, vel quasi sapiente.
-                </p>
+                <p class="description">취득 자격증 및 교육이수 프로그램</p>
                 <ul class="majors">
                     <li class="major">
                         <p class="major__title">Certification</p>
@@ -97,113 +94,116 @@
             </section>
             <!-- skills -->
             <section id="skills" class="section">
-                <h2 class="title">My Skills</h2>
-                <p class="description">Skill & Attributes</p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum voluptas distinctio eveniet atque quasi 
-                    aperiam eligendi tempora vero, odit et laudantium unde 
-                    similique, minus ab, vitae accusamus a quam alias!</p>
-                <div>
-                    <section>
-                        <h3>Coding Skills</h3>
-                        <ul>
-                            <li><i class="fa-brands fa-java"></i></i>Java</li>
-                            <li><i class="fa-brands fa-html5"></i>HTML</li>
-                            <li><i class="fa-brands fa-css3-alt"></i>css</li>
-                            <li><i class="fa-brands fa-square-js"></i>JavaScript</li>
-                            <li><i class="fa-brands fa-servicestack"></i>MyBatis</li>
-                            <li><i class="fa-brands fa-servicestack"></i>JPA</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>Visual Stuido Code</li>
-                            <li>IntelliJ</li>
-                            <li>Spring Tool Suite 4</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Etc</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>MyriaDB</li>
-                            <li>SourceTree</li>
-                            <li>Postman</li>
-                        </ul>
-                    </section>
+                <div class="max-container">
+                    <h2 class="title">My Skills</h2>
+                    <p class="description">기술 스택 및 프로그램</p>
+                    <div class="skills">
+                        <section class="skills__coding">
+                            <h3 class="skills__title">Coding Skills</h3>
+                            <ul class="skills__each">
+                                <li><i class="fa-brands fa-java skill__title__icon"></i><span class="skills__eachitem">Java</span></li>
+                                <li><i class="fa-brands fa-html5 skill__title__icon"></i><span class="skills__eachitem">HTML</li>
+                                <li><i class="fa-brands fa-css3-alt skill__title__icon"></i><span class="skills__eachitem">css</li>
+                                <li><i class="fa-brands fa-square-js skill__title__icon"></i><span class="skills__eachitem">JavaScript</li>
+                                <li><i class="fa-brands fa-servicestack skill__title__icon"></i><span class="skills__eachitem">MyBatis</li>
+                                <li><i class="fa-brands fa-servicestack skill__title__icon"></i><span class="skills__eachitem">JPA</li>
+                            </ul>
+                        </section>
+                        <section class="skills__tools"> 
+                            <h3 class="skills__title">Tools</h3>
+                            <ul class="skills__each__other">
+                                <li>Visual Stuido Code</li>
+                                <li>IntelliJ</li>
+                                <li>Spring Tool Suite 4</li>
+                            </ul>
+                        </section>
+                        <section class="skills__etc">
+                            <h3 class="skills__title">Etc</h3>
+                            <ul class="skills__each__other">
+                                <li>Git</li>
+                                <li>MyriaDB</li>
+                                <li>SourceTree</li>
+                                <li>Postman</li>
+                            </ul>
+                        </section>
+                    </div>
                 </div>
             </section>
             <!-- work -->
-            <section id="work" class="section">
-                <h2 class="title">My work</h2>
-                <p class="description">Projects</p>
-                <ul>
-                    <li><a href="#" target="_blank">
-                        <img src="images/photogram1.png" alt="photogram1">
-                        <div>
-                            <h3>Photogram Project</h3>
-                            <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#" target="_blank">
-                        <img src="images/photogram2.png" alt="photogram2">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#" target="_blank">
-                        <img src="images/myblog1.png" alt="myblog1">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#" target="_blank">
-                        <img src="images/myblog2.png" alt="myblog2">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                    </a></li>
-                    <li><a href="#" target="_blank">
-                        <img src="images/watchapedia.png" alt="watcha">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>Clone Coding with HTML, CSS</p>
-                        </div>
-                    </a></li>
-                </ul> 
+            <section id="work" class="section  max-container">
+                <div class="max-container">
+                    <h2 class="title">My work</h2>
+                    <p class="description">프로젝트</p>
+                    <ul>
+                        <li class="project__list">
+                            <div class="project"></div>
+                            <button class="category">Photogram</button>                    
+                            <div class="category__project">
+                                <h3 class="category__project__title">포토그램 만들기(2023/08~09)</h3>
+                                <p class="category__project__content">Spring Boot, Java, MariaDB, JPA, Mybatis</p>
+                            </div>
+                            <div class="category__project__img">
+                                <img class="category__img" src="images/photogram1.png" id="photogram" alt="photogram1">
+                                <img class="category__img" src="images/photogram2.png" id="photogram" alt="photogram2">
+                            </div>    
+                        </li>
+                        <li>
+                            <div class="project"></div>
+                            <button class="category">MyBlog</button>                    
+                            <div class="category__project">
+                                <h3 class="category__project__title">나만의 블로그 만들기(2023/07)</h3>
+                                <p class="category__project__content">Spring Boot, Java, MariaDB, JPA, Mybatis</p>
+                            </div>
+                            <div class="category__project__img">
+                                <img src="images/myblog1.png" id="myblog" alt="myblog">
+                                <img src="images/myblog2.png" id="myblog" alt="myblog">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project"></div>
+                            <button class="category">Watchapedia</button>                    
+                            <div class="category__project">
+                                <h3 class="category__project__title">왓챠플레이 서비스 구현해보기 (2022/09~2022/10)</h3>
+                                <p class="category__project__content">Spring Boot, Java, MariaDB, MyBatis, thymeleaf</p>
+                            </div>
+                            <div class="category__project__img">
+                                <img src="images/watchapedia.png" id="watchapedia" alt="watchapedia">
+                            </div>
+                        </li>
+                    </ul> 
+    
+                </div>
             </section>
-            <section id="contact" class="section"></section>
             <!-- Arrow up -->
             <aside>
-                <a href="#home" title="back to top">
+                <a class="arrow-up" href="#home" title="back to top">
                     <i class="fa-solid fa-arrow-up"></i>
                 </a>
             </aside>
         </main>
         <!-- footer -->
-        <footer id="work" class="section">
-            <h2 class="title">Contacts</h2>
-            <p class="description">strongsummer0827@gmail.com</p>
-            <ul>
-                <li>
-                    <a href="https://github.com/Awesummer08" target="_blank" title="my github link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://verano08.tistory.com/" target="_blank" title="my blog link">
-                        <i class="fa-solid fa-book"></i>
-                    </a>
-                </li>
-            </ul>
-            <div>
-                <i class="fa-regular fa-copyright"></i>
-                <span>AweSummer - All rights reserved</span>
+        <footer id="contact" class="section">
+            <div class="max-container">
+                <h2 class="title">Contacts</h2>
+                <p class="description">strongsummer0827@gmail.com</p>
+                <ul class="contact__links">
+                    <li>
+                        <a class="contact__link" 
+                        href="https://github.com/Awesummer08" target="_blank" title="my github link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact__link"  
+                        href="https://verano08.tistory.com/" target="_blank" title="my blog link">
+                            <i class="fa-solid fa-book"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <i class="fa-regular fa-copyright"></i>
+                    <span>AweSummer - All rights reserved</span>
+                </div>
             </div>
         </footer>
     </body>

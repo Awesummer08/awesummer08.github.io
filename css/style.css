@@ -1,16 +1,17 @@
 /* Global */
 :root {
     /* App Colors */
-    --color-primary: var(--color-black);
-    --color-primary-variant: var(--color-gray);
+    --color-primary: var(--color-bg);
+    --color-primary-variant: var(--color-title);
     --color-accent: var(--color-blue);
     --color-accent-variant: var(--color-orange);
     --color-text: var(--color-white);
 
     /* Colors */
     --color-white: #ffffff;
-    --color-black: #050a13;
-    --color-blue: #03e8f9;
+    --color-bg: rgb(126, 165, 192);
+    --color-title: #2e5684;
+    --color-blue: #110f5c;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
 
@@ -78,7 +79,7 @@
 
     /* Header */
     .header {
-        background-color: #050a13;
+        background-color: var(--color-title);
         position: fixed;
         top: 0;
         width: 100%;
@@ -124,11 +125,12 @@
 
     /* Home */
     #home {
-        background-color: var(--color-primary);
+        background-color: var(--color-bg);
         color: var(--color-text);
         padding: 5rem 1rem;
         padding-top: 7rem;
         text-align: center;
+        font-weight: 700;
     }
 
     .home__avatar {
@@ -136,20 +138,17 @@
         height: 250px;
         object-fit: cover;
         border-radius: 100%;
-        border: 3px solid var(--color-accent);
+        border: 3px solid var(--color-text);
     }
     
     .home__title {
-        font-size: 3rem;
-        margin-bottom:1rem;
+        margin: 1rem 0;
     }
 
     .home__title--strong {
+        font-size: 1.5rem;
+        font-weight: 700;
         color: var(--color-accent);
-    }
-
-    .home__description__en {
-        font-size: 1.3rem;
     }
 
     .home__description {
@@ -223,3 +222,212 @@
     .major:hover {
         transform: scale(1.1);
     }
+
+
+    /* skills */
+    #skills {
+        background-color: var(--color-primary-variant);
+        color: var(--color-text);
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        margin: 2rem 3rem;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 
+        0 12.5px 10px rgba(0, 0, 0, 0.06), 
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072), 
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086), 
+        0 100px 80px rgba(0, 0, 0, 0.12)
+    }
+
+    .skills__title {
+        color: var(--color-accent);
+        margin: 1rem 0;
+        font-size: 1.7rem;
+    }
+
+    .skills__each {
+        margin: 0.2rem;
+        margin-bottom: 0.5rem;
+        font-size : 1.5rem;
+        color: var(--color-accent);
+    }
+
+    .skills__eachitem {
+        margin-left: 0.5rem;
+        color: white;
+    }
+
+    .skills__each__other {
+        margin: 0.2rem;
+        margin-bottom: 0.5rem;
+        font-size : 1.5rem;
+    }
+
+    .skills__coding {
+        grid-row: span 2;
+        padding: 1rem;
+        background-color: var(--color-primary);
+        filter: brightness(130%);
+    }
+
+    .skills__tools {
+        padding: 1rem;
+    }
+
+    .skills__etc {
+        padding: 1rem;
+        background-color: var(--color-primary);
+        filter: brightness(150%);
+    }
+
+    
+    /* Work */
+
+    .project__list {
+        width: 100%;
+    }
+
+    .project {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-top: 3px solid var(--color-accent);
+    }
+
+    .category {
+        color: var(--color-text);
+        background-color: var(--color-primary-variant);
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+        border-radius: 4px;
+        border: 1px solid;
+        cursor: pointer;
+        white-space: nowrap;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 1rem;
+    }
+    .category:hover {
+        background-color: var(--color-text);
+        color: var(--color-primary-variant);
+    }
+
+    .category__project__title {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .category__project__content {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .category__project__img {
+        width: 100%;
+    }
+
+    /* Arrow up */
+    .arrow-up {
+        background-color: var(--color-primary);
+        position: fixed;
+        bottom: 3rem;
+        right: 3rem;
+        font-size: 3rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 0px 0px var(--color-accent);
+    }
+
+    /* Footer */
+    #contact {
+        background-color: var(--color-primary);
+        color: var(--color-text);
+    }
+
+    .contact__links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .contact__link {
+        transition: color 250ms ease-in;
+    }
+
+    .contact__link:hover {
+        color: var(--color-accent);
+    }
+
+    @media screen and (max-width:768px) {
+        .section {
+            padding: 3rem 2rem;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .description {
+            font-size: 1rem;
+        }
+
+        .header {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .header__nav {
+            width: 100%;
+        }
+
+        .header__menu {
+            flex-direction: column;
+            text-align: center;
+            padding: 1rem 4rem;
+            gap: 1rem;
+        }
+
+        #home {
+            padding-bottom: 3rem;
+        }
+
+        .home__title {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .majors {
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .major {
+            max-width: 25rem;
+        }
+
+        .skills {
+            grid-template-columns: 1fr;
+        }
+
+        .arrow-up {
+            font-size: 2rem;
+            width: 3rem;
+            height: 3rem;
+            bottom: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+
+    
