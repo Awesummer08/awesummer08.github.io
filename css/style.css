@@ -8,7 +8,7 @@
 
     /* Colors */
     --color-white: #ffffff;
-    --color-bg: rgb(114, 157, 188);
+    --color-bg: rgb(97, 154, 196);
     --color-title: #2e5684;
     --color-blue: #110f5c;
     --color-gray: #1b1e26;
@@ -99,7 +99,7 @@
         justify-content: right;
         align-items: center;
         gap: 8px;
-        padding-right: 50rem;
+        padding-right: 37rem;
     }
 
     .header__logo__img {
