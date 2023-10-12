@@ -357,7 +357,7 @@
         border-top: 3px solid var(--color-accent);
     }
 
-    .category {
+    .category__button {
         color: var(--color-text);
         background-color: var(--color-primary-variant);
         font-size: 1.5rem;
@@ -370,7 +370,43 @@
         justify-content: left;
         margin-bottom: 1rem;
     }
-    .category:hover {
+    .category__button:hover {
+        background-color: var(--color-text);
+        color: var(--color-primary-variant);
+    }
+
+    .category__button2 {
+        color: var(--color-text);
+        background-color: var(--color-primary-variant);
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+        border-radius: 4px;
+        border: 1px solid;
+        cursor: pointer;
+        white-space: nowrap;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 1rem;
+    }
+    .category__button2:hover {
+        background-color: var(--color-text);
+        color: var(--color-primary-variant);
+    }
+
+    .category__button3 {
+        color: var(--color-text);
+        background-color: var(--color-primary-variant);
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+        border-radius: 4px;
+        border: 1px solid;
+        cursor: pointer;
+        white-space: nowrap;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 1rem;
+    }
+    .category__button3:hover {
         background-color: var(--color-text);
         color: var(--color-primary-variant);
     }
@@ -478,7 +514,7 @@
         }
 
         .header__logo__title {
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
 
         .header__nav {
@@ -506,8 +542,12 @@
         }
 
         .home__title {
-            font-size: 2rem;
+            font-size: 1rem;
             margin-bottom: 0.5rem;
+        }
+
+        .home__description {
+            font-size: 1rem;
         }
 
         .majors {
@@ -522,6 +562,33 @@
 
         .skills {
             grid-template-columns: 1fr;
+        }
+
+        .category__content{
+            display: none;
+        }
+
+        .category__content.open {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category__content2{
+            display: none;
+        }
+
+        .category__content2.open {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category__content3{
+            display: none;
+        }
+
+        .category__content3.open {
+            display: flex;
+            flex-direction: column;
         }
 
         .arrow-up {
